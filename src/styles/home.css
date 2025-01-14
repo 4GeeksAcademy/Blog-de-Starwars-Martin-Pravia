@@ -11,3 +11,15 @@
     overflow-x: scroll;
    
 } 
+.cardInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .character-img {
+    max-width: 100%; 
+    max-height: 300px; 
+    object-fit: contain;
+ }
