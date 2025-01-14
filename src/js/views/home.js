@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 
 import "../../styles/home.css";
+import { Link, useParams } from "react-router-dom";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -19,8 +20,8 @@ export const Home = () => {
                     <p className="card-text">Hair color: {item.properties.hair_color}</p>
                     <p className="card-text">Eye color: {item.properties.eye_color}</p>
                     <div className="d-flex justify-content-between">
-                    <button  className="btn btn-outline-primary">Learn more!</button>
-                    <button  className="btn btn-outline-warning"><i class="bi bi-heart"></i></button>
+                    <Link to={`/people/${item._id}`} className="btn btn-outline-primary">Learn more!</Link>
+                    <button  className="btn btn-outline-warning"><i class="fa-regular fa-heart"></i></button>
                     </div>
 
                 </div>
