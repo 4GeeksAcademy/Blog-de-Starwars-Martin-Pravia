@@ -1,10 +1,12 @@
 .my-card {
     border: 1px solid rgb(199, 189, 189);
-    min-width: 300px;
+    min-width: 240px;
     
 }
 .my-card img {
-    width: 100%;
+    max-width: 100%; 
+    max-height: 300px; 
+    object-fit: contain;
 }
 .carousel {
     display: flex;
