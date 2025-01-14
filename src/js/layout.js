@@ -7,6 +7,7 @@ import { Home } from "./views/home";
 import injectContext from "./store/appContext";
 
 import People from "./views/People.jsx";
+import { Navbar } from "./component/navbar.js";
 
 //create your first component
 const Layout = () => {
@@ -18,6 +19,7 @@ const Layout = () => {
     <div>
       <BrowserRouter basename={basename}>
         <ScrollToTop>
+          <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/people/:theid" element={<People />} />
